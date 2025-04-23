@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Números Virtuales SMS - Simulación</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Números Virtuales SMS</h1>
+    <p>Simulación de servicio de recepción de SMS</p>
+  </header>
+
+  <main>
+    <section class="numbers">
+      <h2>Seleccioná un número:</h2>
+      <ul id="numberList">
+        <li onclick="showMessages('+1 202-555-0123')">+1 202-555-0123</li>
+        <li onclick="showMessages('+54 911-1234-5678')">+54 911-1234-5678</li>
+        <li onclick="showMessages('+44 20-7946-0958')">+44 20-7946-0958</li>
+      </ul>
+    </section>
+
+    <section class="inbox">
+      <h2>Bandeja de entrada:</h2>
+      <div id="messageBox">
+        <p>Seleccioná un número para ver los SMS simulados.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Números Virtuales Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
