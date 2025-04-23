@@ -2,38 +2,86 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Números Virtuales SMS - Simulación</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMS Virtual - Mittag</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #0077cc;
+    }
+    header h1 span {
+      color: #ff3c00;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Números Virtuales SMS</h1>
-    <p>Simulación de servicio de recepción de SMS</p>
+    <h1>Servicio de Números Virtuales <span>Mittag</span></h1>
+    <p>Simulación de recepción de SMS - Italia</p>
   </header>
 
-  <main>
-    <section class="numbers">
-      <h2>Seleccioná un número:</h2>
-      <ul id="numberList">
-        <li onclick="showMessages('+1 202-555-0123')">+1 202-555-0123</li>
-        <li onclick="showMessages('+54 911-1234-5678')">+54 911-1234-5678</li>
-        <li onclick="showMessages('+44 20-7946-0958')">+44 20-7946-0958</li>
-      </ul>
-    </section>
-
-    <section class="inbox">
-      <h2>Bandeja de entrada:</h2>
-      <div id="messageBox">
-        <p>Seleccioná un número para ver los SMS simulados.</p>
-      </div>
-    </section>
-  </main>
+  <div class="container">
+    <div class="card">
+      <h2>+39 345 678 9012</h2>
+      <p>Ultimo SMS: "Tu código de verificacion es 4582"</p>
+    </div>
+    <div class="card">
+      <h2>+39 348 123 4567</h2>
+      <p>Ultimo SMS: "Benvenuto! Il tuo codice è 9147"</p>
+    </div>
+    <div class="card">
+      <h2>+39 347 654 3210</h2>
+      <p>Ultimo SMS: "Codice di accesso: 7234"</p>
+    </div>
+  </div>
 
   <footer>
-    <p>© 2025 Números Virtuales Demo</p>
+    <p>&copy; 2025 Mittag | Proyecto demo SMS Virtual</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
